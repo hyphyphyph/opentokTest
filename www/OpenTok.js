@@ -190,7 +190,7 @@
       this.sessionId = sessionId;
       this.production = production;
       console.log(this.production);
-      Cordova.exec(TBSuccess, TBSuccess, "TokBox", "initSession", [this.sessionId, this.production]);
+      Cordova.exec(TBSuccess, TBSuccess, "TokBox", "initSession", [this.sessionId]);
     }
 
     TBSession.prototype.cleanUpDom = function() {
