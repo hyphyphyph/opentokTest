@@ -39,7 +39,7 @@
     // Create Session
     if ( production ) {
         NSLog(@"PRODUCTION!");
-        _session = [[OTSession alloc] initWithSessionId:sessionId delegate:self environment:OTSessionEnvironmentProduction];
+        _session = [[OTSession alloc] initWithSessionId:sessionId delegate:self];
     }else {
         NSLog(@" NOT PRODUCTION!");
         _session = [[OTSession alloc] initWithSessionId:sessionId delegate:self];
@@ -235,11 +235,8 @@
     [sessionDict setObject:connection forKey:@"connection"];
     
     // Session Environment
-    if (session.environment==OTSessionEnvironmentProduction) {
-        [sessionDict setObject:@"production" forKey:@"environment"];
-    }else {
-        [sessionDict setObject:@"staging" forKey:@"environment"];
-    }
+    // Changed to production by default
+    [sessionDict setObject:@"production" forKey:@"environment"];
     
     // After session dictionary is constructed, return the result!
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:sessionDict];

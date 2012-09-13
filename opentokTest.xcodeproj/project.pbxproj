@@ -52,7 +52,7 @@
 		CA7B24B215FFD0BC0081194B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7B24AB15FFD0BC0081194B /* libz.dylib */; };
 		CA7B24B315FFD0BC0081194B /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7B24AC15FFD0BC0081194B /* libstdc++.dylib */; };
 		CA7B24B515FFD0D20081194B /* opentok.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA7B24B415FFD0D20081194B /* opentok.bundle */; };
-		CA7B24B815FFD1480081194B /* OpenTokPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7B24B715FFD1480081194B /* OpenTokPlugin.m */; };
+		CA7B24BE15FFE0CD0081194B /* OpenTokPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7B24BD15FFE0CD0081194B /* OpenTokPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,8 +138,8 @@
 		CA7B24AB15FFD0BC0081194B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		CA7B24AC15FFD0BC0081194B /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		CA7B24B415FFD0D20081194B /* opentok.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = opentok.bundle; path = "../../../OpenTok-iOS-Hello-World/opentok-ios-sdk/Opentok.framework/Versions/A/Resources/opentok.bundle"; sourceTree = "<group>"; };
-		CA7B24B615FFD1480081194B /* OpenTokPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenTokPlugin.h; sourceTree = "<group>"; };
-		CA7B24B715FFD1480081194B /* OpenTokPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenTokPlugin.m; sourceTree = "<group>"; };
+		CA7B24BC15FFE0CD0081194B /* OpenTokPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenTokPlugin.h; sourceTree = "<group>"; };
+		CA7B24BD15FFE0CD0081194B /* OpenTokPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenTokPlugin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,8 +300,8 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				CA7B24B615FFD1480081194B /* OpenTokPlugin.h */,
-				CA7B24B715FFD1480081194B /* OpenTokPlugin.m */,
+				CA7B24BC15FFE0CD0081194B /* OpenTokPlugin.h */,
+				CA7B24BD15FFE0CD0081194B /* OpenTokPlugin.m */,
 			);
 			name = Plugins;
 			path = opentokTest/Plugins;
@@ -483,7 +483,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				CA7B24B815FFD1480081194B /* OpenTokPlugin.m in Sources */,
+				CA7B24BE15FFE0CD0081194B /* OpenTokPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
